@@ -1,0 +1,46 @@
+site_name: 3GPP Study Wiki
+site_description: 3GPP Specs → SW → Web App
+site_url: https://<github-id>.github.io/my-wiki/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - 3GPP Specs:
+      - Overview: specs/index.md
+      - 23 Series: specs/23_series.md
+      - 24 Series: specs/24_series.md
+      - 38 Series: specs/38_series.md
+  - Spec Breakdown:
+      - Overview: breakdown/index.md
+      - Registration: breakdown/registration.md
+      - PDU Session: breakdown/pdu_session.md
+      - Mobility: breakdown/mobility.md
+  - Software Design:
+      - Overview: sw/index.md
+      - Data Model: sw/data_model.md
+      - State Machine: sw/state_machine.md
+      - API Design: sw/api_design.md
+  - Web App:
+      - Overview: webapp/index.md
+      - Streamlit: webapp/streamlit.md
+      - Dashboard: webapp/dashboard.md
+      - Visualization: webapp/visualization.md
+  - Reference:
+      - Glossary: reference/glossary.md
+      - Links: reference/links.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
